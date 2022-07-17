@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Websocket practice</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <div>
+        <h1>Websocket chat</h1>
+        <h2 id="count-header">Online: TODO</h2>
+        <div>
+            <input type="text" id="username" placeholder="Username" />
+        </div>
+        <div>
+            <input type='text' id='txt-message' placeholder='Message'>
+            <button id='btn-send'>Send</button>
+        </div>
+        <div id="typing-container"></div>
+        <div id="chat-container"></div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chatSocket.js"></script>
+</body>
+
+</html>
